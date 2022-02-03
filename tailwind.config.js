@@ -26,7 +26,6 @@ module.exports = {
       colors: {
         black: "#212b36",
         dark: "#18191F",
-        "dark-700": "#18191Fb3",
         primary: "#4985C5",
         secondary: "#FEDD59",
         "body-color": "#637381",
