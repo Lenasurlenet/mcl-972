@@ -25,10 +25,10 @@ module.exports = {
     extend: {
       colors: {
         black: "#212b36",
-        dark: "#090E34",
-        "dark-700": "#090e34b3",
-        primary: "#3056D3",
-        secondary: "#13C296",
+        dark: "#18191F",
+        "dark-700": "#18191Fb3",
+        primary: "#4985C5",
+        secondary: "#FEDD59",
         "body-color": "#637381",
         warning: "#FBBF24",
       },
