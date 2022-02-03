@@ -24,6 +24,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        white: "#FFFFFF",
         black: "#212b36",
         dark: "#18191F",
         primary: "#4985C5",
@@ -32,6 +33,7 @@ module.exports = {
         warning: "#FBBF24",
       },
       boxShadow: {
+        feature: "0px 7px 20px rgba(0, 0, 0, 0.03)",
         input: "0px 7px 20px rgba(0, 0, 0, 0.03)",
         pricing: "0px 39px 23px -27px rgba(0, 0, 0, 0.04)",
         "switch-1": "0px 0px 5px rgba(0, 0, 0, 0.15)",
@@ -40,7 +42,14 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'split-primary-white-v': "linear-gradient(to right, #4985C5 66% , white 34%);",
+        'split-white-black-v': "linear-gradient(to right, white 34%, #18191F 66%);",
+        'split-white-primary-h': "linear-gradient(to bottom, #4985C5 66% , white 34%);",
+        'split-primary-white-h': "linear-gradient(to right, white 34%, #4985C5 66%);"
+      }
+    },
   },
   plugins: [],
 };
