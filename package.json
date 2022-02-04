@@ -1,5 +1,5 @@
 {
-  "name": "play-tailwind",
+  "name": "mon-corps-libere",
   "version": "1.0.0",
   "description": "",
   "main": "tailwind.config.js",
@@ -8,12 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uideck/play-tailwind.git"
+    "url": ""
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.0.15"
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.18"
   }
 }
