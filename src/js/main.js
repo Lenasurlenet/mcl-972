@@ -1,23 +1,28 @@
 (function () {
   "use strict";
 
+  // ==== darkToggler
+  const darkTogglerCheckbox = document.querySelector("#darkToggler");
+  const html = document.querySelector("html");
+
+  const darkModeToggler = () => {
+    darkTogglerCheckbox.checked
+      ? html.classList.remove("ud-dark")
+      : html.classList.add("ud-dark");
+  };
+  darkModeToggler();
+
+  darkTogglerCheckbox.addEventListener("click", darkModeToggler);
+
   // ======= Sticky
   window.onscroll = function () {
-    const ud_header = document.querySelector(".ud-header");
+    const ud_header = document.querySelector(".header");
     const sticky = ud_header.offsetTop;
-    const logo = document.querySelector(".header-logo");
 
     if (window.pageYOffset > sticky) {
       ud_header.classList.add("sticky");
     } else {
       ud_header.classList.remove("sticky");
-    }
-
-    // === logo change
-    if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo.svg";
-    } else {
-      logo.src = "assets/images/logo/logo-white.svg";
     }
 
     // show or hide the back-top-top button
@@ -38,7 +43,7 @@
 
   navbarToggler.addEventListener("click", () => {
     navbarToggler.classList.toggle("navbarTogglerActive");
-    navbarCollapse.classList.toggle("hidden");
+    navbarCollapse.classList.toggle("ud-hidden");
   });
 
   //===== close navbar-collapse when a  clicked
@@ -47,7 +52,7 @@
     .forEach((e) =>
       e.addEventListener("click", () => {
         navbarToggler.classList.remove("navbarTogglerActive");
-        navbarCollapse.classList.add("hidden");
+        navbarCollapse.classList.add("ud-hidden");
       })
     );
 
@@ -55,7 +60,7 @@
   const submenuItems = document.querySelectorAll(".submenu-item");
   submenuItems.forEach((el) => {
     el.querySelector("a").addEventListener("click", () => {
-      el.querySelector(".submenu").classList.toggle("hidden");
+      el.querySelector(".submenu").classList.toggle("ud-hidden");
     });
   });
 
@@ -63,13 +68,10 @@
   const faqs = document.querySelectorAll(".single-faq");
   faqs.forEach((el) => {
     el.querySelector(".faq-btn").addEventListener("click", () => {
-      el.querySelector(".icon").classList.toggle("rotate-180");
-      el.querySelector(".faq-content").classList.toggle("hidden");
+      el.querySelector(".icon").classList.toggle("ud-rotate-180");
+      el.querySelector(".faq-content").classList.toggle("ud-hidden");
     });
   });
-
-  // ===== wow js
-  new WOW().init();
 
   // ====== scroll top js
   function scrollTo(element, to = 0, duration = 500) {

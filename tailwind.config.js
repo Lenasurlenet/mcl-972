@@ -25,11 +25,11 @@ module.exports = {
     extend: {
       colors: {
         white: "#FFFFFF",
-        black: "#212b36",
-        dark: "#18191F",
+        black: "#18191F",
+        dark: "#1d354f",
         primary: "#4985C5",
         secondary: "#FEDD59",
-        "body-color": "#637381",
+        "body-color": "#EDF3F9",
         warning: "#FBBF24",
       },
       boxShadow: {
