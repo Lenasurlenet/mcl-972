@@ -683,7 +683,7 @@ body {
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(73 133 197 / var(--tw-border-opacity));
 }
 
 .border-opacity-\[\.15\] {
@@ -718,7 +718,7 @@ body {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(73 133 197 / var(--tw-bg-opacity));
 }
 
 .bg-body-color {
@@ -1058,7 +1058,7 @@ body {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(73 133 197 / var(--tw-text-opacity));
 }
 
 .text-yellow {
@@ -1139,7 +1139,7 @@ body {
 
 .ring-primary {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(74 108 247 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(73 133 197 / var(--tw-ring-opacity));
 }
 
 .grayscale {
@@ -1204,7 +1204,7 @@ input[type="checkbox"]:checked ~ label span svg {
 }
 
 .dark .sticky {
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(73 133 197 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.2;
 }
 
@@ -1329,7 +1329,7 @@ input#checkboxLabel:checked ~ .box span {
 
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(73 133 197 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-90:hover {
@@ -1350,7 +1350,7 @@ input#checkboxLabel:checked ~ .box span {
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(73 133 197 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -1387,7 +1387,7 @@ input#checkboxLabel:checked ~ .box span {
 
 .focus\:border-primary:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(74 108 247 / var(--tw-border-opacity));
+  border-color: rgb(73 133 197 / var(--tw-border-opacity));
 }
 
 .focus\:border-opacity-100:focus {
@@ -1461,7 +1461,7 @@ input#checkboxLabel:checked ~ .box span {
 
 .dark .dark\:bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(74 108 247 / var(--tw-bg-opacity));
+  background-color: rgb(73 133 197 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-\[\#1D2144\] {
@@ -1508,7 +1508,7 @@ input#checkboxLabel:checked ~ .box span {
 
 .dark .dark\:hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(74 108 247 / var(--tw-text-opacity));
+  color: rgb(73 133 197 / var(--tw-text-opacity));
 }
 
 .dark .dark\:hover\:text-white:hover {
