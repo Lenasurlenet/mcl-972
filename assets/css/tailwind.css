@@ -794,6 +794,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 3 / 5;
 }
 
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
 .h-\[2px\]{
   height: 2px;
 }
@@ -840,6 +844,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full{
   height: 100%;
+}
+
+.h-9{
+  height: 2.25rem;
 }
 
 .max-h-\[420px\]{
@@ -906,6 +914,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1rem;
 }
 
+.w-9{
+  width: 2.25rem;
+}
+
+.w-5{
+  width: 1.25rem;
+}
+
 .max-w-full{
   max-width: 100%;
 }
@@ -970,7 +986,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 845px;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
+.max-w-3xl{
+  max-width: 48rem;
+}
+
+.max-w-prose{
+  max-width: 65ch;
+}
+
 .-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[-50\%\]{
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1231,6 +1264,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: currentColor;
 }
 
+.stroke-current{
+  stroke: currentColor;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -1341,6 +1378,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 4rem;
 }
 
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .pr-16{
   padding-right: 4rem;
 }
@@ -1383,6 +1425,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-\[60px\]{
   padding-bottom: 60px;
+}
+
+.pb-\[110px\]{
+  padding-bottom: 110px;
 }
 
 .text-left{
@@ -3805,6 +3851,12 @@ input#checkboxLabel:checked ~ .box span {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.after\:translate-y-\[-50\%\]::after{
+  content: var(--tw-content);
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .after\:rotate-45::after{
   content: var(--tw-content);
   --tw-rotate: 45deg;
@@ -3842,6 +3894,14 @@ input#checkboxLabel:checked ~ .box span {
 
 .hover\:bg-opacity-80:hover{
   --tw-bg-opacity: 0.8;
+}
+
+.hover\:bg-opacity-90:hover{
+  --tw-bg-opacity: 0.9;
+}
+
+.hover\:bg-opacity-20:hover{
+  --tw-bg-opacity: 0.2;
 }
 
 .hover\:text-primary:hover{
@@ -3927,7 +3987,23 @@ input#checkboxLabel:checked ~ .box span {
   opacity: 0.6;
 }
 
+.group:hover .group-hover\:opacity-90{
+  opacity: 0.9;
+}
+
+.group:hover .group-hover\:opacity-70{
+  opacity: 0.7;
+}
+
 @media (prefers-color-scheme: dark){
+  .dark\:block{
+    display: block;
+  }
+
+  .dark\:hidden{
+    display: none;
+  }
+
   .dark\:border-white{
     --tw-border-opacity: 1;
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -3952,6 +4028,10 @@ input#checkboxLabel:checked ~ .box span {
     background-color: rgb(254 221 89 / var(--tw-bg-opacity));
   }
 
+  .dark\:bg-opacity-10{
+    --tw-bg-opacity: 0.1;
+  }
+
   .dark\:text-white{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -3965,6 +4045,14 @@ input#checkboxLabel:checked ~ .box span {
   .dark\:text-black{
     --tw-text-opacity: 1;
     color: rgb(24 25 31 / var(--tw-text-opacity));
+  }
+
+  .dark\:opacity-90{
+    opacity: 0.9;
+  }
+
+  .dark\:hover\:bg-opacity-20:hover{
+    --tw-bg-opacity: 0.2;
   }
 }
 
@@ -4030,8 +4118,20 @@ input#checkboxLabel:checked ~ .box span {
     margin-bottom: 2rem;
   }
 
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
+  }
+
+  .md\:h-14{
+    height: 3.5rem;
+  }
+
+  .md\:h-6{
+    height: 1.5rem;
   }
 
   .md\:w-1\/2{
@@ -4044,6 +4144,14 @@ input#checkboxLabel:checked ~ .box span {
 
   .md\:w-1\/3{
     width: 33.333333%;
+  }
+
+  .md\:w-14{
+    width: 3.5rem;
+  }
+
+  .md\:w-6{
+    width: 1.5rem;
   }
 
   .md\:grid-cols-2{
@@ -4081,8 +4189,21 @@ input#checkboxLabel:checked ~ .box span {
     padding-bottom: 4rem;
   }
 
+  .md\:px-9{
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
   .md\:pt-\[130px\]{
     padding-top: 130px;
+  }
+
+  .md\:pt-\[150px\]{
+    padding-top: 150px;
+  }
+
+  .md\:pb-\[120px\]{
+    padding-bottom: 120px;
   }
 
   .md\:text-2xl{
@@ -4115,6 +4236,11 @@ input#checkboxLabel:checked ~ .box span {
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:leading-snug{
@@ -4317,6 +4443,11 @@ input#checkboxLabel:checked ~ .box span {
     padding-right: 2.5rem;
   }
 
+  .lg\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .lg\:pl-0{
     padding-left: 0px;
   }
@@ -4417,6 +4548,12 @@ input#checkboxLabel:checked ~ .box span {
   .group:hover .lg\:group-hover\:opacity-90{
     opacity: 0.9;
   }
+
+  @media (prefers-color-scheme: dark){
+    .lg\:dark\:bg-transparent{
+      background-color: transparent;
+    }
+  }
 }
 
 @media (min-width: 1140px){
@@ -4457,6 +4594,19 @@ input#checkboxLabel:checked ~ .box span {
     padding-right: 1.5rem;
   }
 
+  .xl\:px-9{
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .xl\:pt-\[180px\]{
+    padding-top: 180px;
+  }
+
+  .xl\:pb-\[160px\]{
+    padding-bottom: 160px;
+  }
+
   .xl\:text-\[42px\]{
     font-size: 42px;
   }
@@ -4487,5 +4637,13 @@ input#checkboxLabel:checked ~ .box span {
 
   .\32xl\:p-\[60px\]{
     padding: 60px;
+  }
+
+  .\32xl\:pt-\[210px\]{
+    padding-top: 210px;
+  }
+
+  .\32xl\:pb-\[200px\]{
+    padding-bottom: 200px;
   }
 }
