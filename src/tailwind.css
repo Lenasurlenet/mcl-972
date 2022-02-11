@@ -23,20 +23,13 @@ body {
 }
 
 .sticky #navbarCollapse li a {
-  @apply text-dark hover:opacity-100 hover:text-primary;
+  @apply text-white hover:opacity-100 hover:text-primary;
 }
 #navbarCollapse li .menu-scroll.active {
   @apply opacity-70;
 }
 .sticky #navbarCollapse li .menu-scroll.active {
   @apply opacity-100 text-primary;
-}
-.sticky .loginBtn {
-  @apply text-dark hover:text-primary hover:opacity-100;
-}
-
-.sticky .signUpBtn {
-  @apply text-white bg-primary hover:bg-dark hover:text-white;
 }
 
 .navbarTogglerActive > span:nth-child(1) {
