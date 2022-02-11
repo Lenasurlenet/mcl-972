@@ -22,7 +22,12 @@ module.exports = {
       center: true,
       padding: "16px",
     },
+    fontFamily: {
+      Serif: "'Cinzel', serif",
+      Sans: "'Inter', sans'"
+    },
     extend: {
+     
       colors: {
         white: "#FFFFFF",
         black: "#18191F",

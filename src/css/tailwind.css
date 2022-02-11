@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Inter:wght@100;400&display=swap");
 
 /*
 ! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
@@ -472,6 +472,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
 }
 
 .sticky{
@@ -1231,7 +1238,7 @@ body {
 
 .bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
+  background-color: rgb(24 25 31 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#1D2144\] {
@@ -1546,7 +1553,7 @@ body {
 
 .text-black {
   --tw-text-opacity: 1;
-  color: rgb(9 14 52 / var(--tw-text-opacity));
+  color: rgb(24 25 31 / var(--tw-text-opacity));
 }
 
 .text-body-color {
@@ -1950,7 +1957,7 @@ input#checkboxLabel:checked ~ .box span {
 
 .dark .dark\:bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
+  background-color: rgb(24 25 31 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:bg-white {
