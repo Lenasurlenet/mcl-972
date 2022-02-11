@@ -4,7 +4,8 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
+    "build-css": "tailwindcss -i ./src/tailwind.css -o ./src/css/tailwind.css -w"
+    
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
     "tailwindcss": "^3.0.18"
   },
   "dependencies": {
-    "glightbox": "^3.1.0"
+    "glightbox": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^6.3.1",
+    "gulp-minify-cssnames": "^2.1.0"
   }
 }
