@@ -4,8 +4,8 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/tailwind.css -o ./src/css/tailwind.css -w"
-    
+    "build-css": "tailwindcss -i ./src/tailwind.css -o ./src/css/tailwind.css -w",
+    "build": "gulp"
   },
   "repository": {
     "type": "git",
