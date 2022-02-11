@@ -7,8 +7,8 @@
 
   const darkModeToggler = () => {
     darkTogglerCheckbox.checked
-      ? html.classList.remove("ud-dark")
-      : html.classList.add("ud-dark");
+      ? html.classList.remove("dark")
+      : html.classList.add("dark");
   };
   darkModeToggler();
 
@@ -43,7 +43,7 @@
 
   navbarToggler.addEventListener("click", () => {
     navbarToggler.classList.toggle("navbarTogglerActive");
-    navbarCollapse.classList.toggle("ud-hidden");
+    navbarCollapse.classList.toggle("hidden");
   });
 
   //===== close navbar-collapse when a  clicked
@@ -52,7 +52,7 @@
     .forEach((e) =>
       e.addEventListener("click", () => {
         navbarToggler.classList.remove("navbarTogglerActive");
-        navbarCollapse.classList.add("ud-hidden");
+        navbarCollapse.classList.add("hidden");
       })
     );
 
@@ -60,7 +60,7 @@
   const submenuItems = document.querySelectorAll(".submenu-item");
   submenuItems.forEach((el) => {
     el.querySelector("a").addEventListener("click", () => {
-      el.querySelector(".submenu").classList.toggle("ud-hidden");
+      el.querySelector(".submenu").classList.toggle("hidden");
     });
   });
 
@@ -68,8 +68,8 @@
   const faqs = document.querySelectorAll(".single-faq");
   faqs.forEach((el) => {
     el.querySelector(".faq-btn").addEventListener("click", () => {
-      el.querySelector(".icon").classList.toggle("ud-rotate-180");
-      el.querySelector(".faq-content").classList.toggle("ud-hidden");
+      el.querySelector(".icon").classList.toggle("rotate-180");
+      el.querySelector(".faq-content").classList.toggle("hidden");
     });
   });
 

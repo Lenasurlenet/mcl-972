@@ -35,107 +35,128 @@
     </script>
   </head>
   <body class="dark">
-    <!-- ====== Navbar Section Start -->
+         <!-- ====== Navbar Section Start -->
     <div
       class="header bg-transparent absolute top-0 left-0 z-40 w-full flex items-center"
     >
-      <div class="container">
-        <div class="flex -mx-4 items-center justify-between relative">
-          <div class="px-4 max-w-full">
-            <a href="index.html" class="navbar-logo w-full block py-5">
+      <div class="container max-w-[1440px] px-8">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4 w-24 max-w-full">
+            <a href="index.html" class="w-full block py-8 header-logo">
+              <img
+                src="assets/images/logo/mcl-logo.svg"
+                alt="MCL logo"
+                class="w-full dark:hidden"
+              />
               <img
                 src="assets/images/logo/mcl-logo-2.svg"
-                alt="mcl logo"
-                class="header-logo w-24 h-24"
+                alt="MCL logo"
+                class="w-full hidden dark:block"
               />
             </a>
           </div>
-          <div class="flex px-4 justify-between items-center w-full">
+          <div class="flex px-4 justify-end items-center w-full">
             <div>
               <button
                 id="navbarToggler"
-                class="block absolute right-4 top-1/2 -translate-y-1/2 lg:hidden focus:ring-2 ring-[#4985C5] px-3 py-[6px] rounded-lg"
+                aria-label="Mobile Menu"
+                class="block absolute right-4 top-1/2 translate-y-[-50%] lg:hidden focus:ring-2 ring-primary px-3 py-[6px] rounded-lg"
               >
                 <span
-                  class="relative w-[30px] h-[2px] my-[6px] block bg-white"
+                  class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white"
                 ></span>
                 <span
-                  class="relative w-[30px] h-[2px] my-[6px] block bg-white"
+                  class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white"
                 ></span>
                 <span
-                  class="relative w-[30px] h-[2px] my-[6px] block bg-white"
+                  class="relative w-[30px] h-[2px] my-[6px] block bg-dark dark:bg-white"
                 ></span>
               </button>
               <nav
                 id="navbarCollapse"
-                class="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none"
+                class="absolute py-5 lg:py-0 lg:px-4 xl:px-6 bg-white dark:bg-dark lg:dark:bg-transparent lg:bg-transparent shadow-lg rounded-lg max-w-[250px] w-full lg:max-w-full lg:w-full right-4 top-full hidden lg:block lg:static lg:shadow-none"
               >
                 <ul class="block lg:flex">
                   <li class="relative group submenu-item">
-                    <p
+                    <a
                       href="javascript:void(0)"
-                      class="text-base text-dark lg:text-white lg:group-hover:opacity-90 lg:group-hover:text-white group-hover:text-[#4985C5] py-2 lg:py-6 lg:inline-flex lg:pl-0 lg:pr-4 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:-translate-y-1/2 after:mt-[-2px]"
+                      class="text-base text-dark dark:text-white group-hover:opacity-70 py-2 lg:py-6 lg:inline-flex lg:pl-0 lg:pr-4 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:translate-y-[-50%] after:mt-[-2px]"
                     >
                       Prestations
-                    </p>
+                    </a>
                     <div
-                      class="submenu hidden relative lg:absolute w-[250px] top-full lg:top-[110%] left-0 rounded-sm lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-60 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300"
+                      class="submenu hidden relative lg:absolute w-[250px] top-full lg:top-[110%] left-0 rounded-md lg:shadow-lg p-4 lg:block lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white transition-[top] duration-300"
                     >
                       <a
                         href="massage.html"
-                        class="block text-sm text-body-color rounded hover:text-[#4985C5] py-[10px] px-4"
+                        class="block text-sm rounded py-[10px] px-4 text-dark hover:opacity-70"
                       >
                         Massage
                       </a>
+
                       <a
                         href="sophrologie.html"
-                        class="block text-sm text-body-color rounded hover:text-[#4985C5] py-[10px] px-4"
+                        class="block text-sm rounded py-[10px] px-4 text-dark hover:opacity-70"
                       >
                         Sophrologie
                       </a>
                       <a
                         href="relaxation.html"
-                        class="block text-sm text-body-color rounded hover:text-[#4985C5] py-[10px] px-4"
+                        class="hidden block text-sm rounded py-[10px] px-4 text-dark hover:opacity-70"
                       >
-                        Relaxation
+                        Relaxation 2.0
                       </a>
                     </div>
                   </li>
-                  <li class="relative group">
+                  
+                  <li class="hidden relative group">
                     <a
-                      href="#entreprise"
-                      class="menu-scroll text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-[#4985C5] py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0"
+                      href="#Entreprise"
+                      class="menu-scroll text-base text-dark dark:text-white group-hover:opacity-70 py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12"
                     >
                       Entreprise
                     </a>
                   </li>
-
                   <li class="relative group">
                     <a
                       href="#pricing"
-                      class="menu-scroll text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-[#4985C5] py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12"
+                      class="menu-scroll text-base text-dark dark:text-white group-hover:opacity-70 py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12"
                     >
                       Tarifs
                     </a>
                   </li>
                   <li class="relative group">
                     <a
-                      href="about.html"
-                      class="menu-scroll text-base text-dark lg:text-white lg:group-hover:opacity-70 lg:group-hover:text-white group-hover:text-white py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-7 xl:ml-12"
+                      href="#contact"
+                      class="menu-scroll text-base text-dark dark:text-white group-hover:opacity-70 py-2 lg:py-6 lg:inline-flex lg:px-0 flex mx-8 lg:mr-0 lg:ml-8 xl:ml-12"
                     >
-                      A propos
+                      À propos
                     </a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <div class="sm:flex justify-end hidden pr-16 lg:pr-0">
+            <div class="flex justify-end items-center pr-16 lg:pr-0">
               <a
                 href="about.html/#contact"
-                class="text-base font-medium text-white bg-[#4985C5] rounded-lg py-3 px-6 hover:bg-opacity-80 signUpBtn duration-300 ease-in-out"
+                class="hidden md:block text-base font-bold text-white bg-primary py-3 px-8 md:px-9 lg:px-6 xl:px-9 hover:shadow-signUp hover:bg-opacity-90 rounded-md transition ease-in-up duration-300"
               >
                 Contact
               </a>
+              <div>
+                <label
+                  for="darkToggler"
+                  class="cursor-pointer w-9 h-9 md:w-14 md:h-14 rounded-full flex items-center justify-center bg-gray-2 dark:bg-dark-bg text-black dark:text-white"
+                >
+                  <input
+                    type="checkbox"
+                    name="darkToggler"
+                    id="darkToggler"
+                    class="sr-only"
+                    aria-label="darkToggler"
+                  />
+                </label>
+              </div>
             </div>
           </div>
         </div>
