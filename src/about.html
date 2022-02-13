@@ -1459,7 +1459,7 @@
               <h3 class="font-semibold mb-8 text-2xl md:text-[26px]">
                 Laissez un mot
               </h3>
-              <form netlify>
+              <form action="https://formsubmit.co/bonjour@moncorpslibere.fr" method="POST" netlify>
                 <div class="mb-6">
                   <label for="fullName" class="block text-xs text-dark"
                     >Nom*</label
@@ -1467,6 +1467,7 @@
                   <input
                     type="text"
                     name="fullName"
+                    required
                     placeholder="Jean PETIT"
                     class="w-full border-0 border-b border-[#f1f1f1] focus:border-[#4985C5] focus:outline-none py-4"
                   />
@@ -1478,6 +1479,7 @@
                   <input
                     type="email"
                     name="email"
+                    required
                     placeholder="exemple@moncourriel.fr"
                     class="w-full border-0 border-b border-[#f1f1f1] focus:border-[#4985C5] focus:outline-none py-4"
                   />
@@ -1493,6 +1495,17 @@
                     class="w-full border-0 border-b border-[#f1f1f1] focus:border-[#4985C5] focus:outline-none py-4"
                   />
                 </div>
+                <div class="hidden mb-6">
+                  <label for="phone" class="block text-xs text-dark"
+                    >Subject</label
+                  >
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="Formulaire depuis moncorpslibere.fr"
+                    class="w-full border-0 border-b border-[#f1f1f1] focus:border-[#4985C5] focus:outline-none py-4"
+                  />
+                </div>               
                 <div class="mb-6">
                   <label for="message" class="block text-xs text-dark"
                     >Message*</label
