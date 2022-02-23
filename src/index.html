@@ -2293,61 +2293,73 @@
         <div
           class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 md:gap-8 place-items-center"
         >
-          <div
+          <button
             id="big-preview"
-            class="relative aspect-video h-96 w-48 md:max-w-[640px] md:max-h-[360px]"
+            class="relative aspect-video h-96 w-48 text-center md:max-w-[640px] md:max-h-[360px]"
           >
             <img
               src="assets/images/media/quoi-de-9.jpg"
               alt=""
-              class="h-full object-cover rounded-lg overflow-hidden"
+              class="relative h-full w-full object-cover object-center rounded-lg overflow-hidden"
             />
-            <img
-              src="assets/images/media/play.svg"
-              alt=""
-              class="absolute top-1/2 left-[50%] right-[50%] cursor-pointer"
-            />
-          </div>
-          <!-- ... -->
-          <div id="small-previews" class="grid grid-cols-1 gap-6 lg:px-6">
             <div
-              class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+              class="absolute w-full h-full top-0 right-0 flex items-center justify-center"
             >
-              <img
-                src="assets/images/media/1-jour-1-entreprise.png"
-                alt=""
-                class="object-cover rounded-lg overflow-hidden"
-              />
-              <p class="preview-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-                similique!
-              </p>
+              <a
+                href="https://www.youtube.com/embed/-jxEu0GicYs"
+                class="w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white bg-opacity-75 text-primary hover:bg-opacity-100 transition"
+              >
+                <svg
+                  width="16"
+                  height="18"
+                  viewBox="0 0 16 18"
+                  class="fill-current"
+                >
+                  <path
+                    d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z"
+                  />
+                </svg>
+              </a>
             </div>
-            <div
-              class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
-            >
-              <img
-                src="assets/images/media/1-jour-1-entreprise.png"
-                alt=""
-                class="object-cover rounded-lg overflow-hidden"
-              />
-              <p class="preview-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-                similique!
-              </p>
+          </button>
+
+          <div class="small-previews grid grid-cols-1 gap-6 lg:px-6">
+            <!-- ... -->
+            <div id="small-preview" class="grid grid-cols-1 gap-6 lg:px-6">
+              <a
+                href="https://youtu.be/eE69clJxUs4"
+                class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+              >
+                <img
+                  src="assets/images/media/1-jour-1-entreprise.png"
+                  alt=""
+                  class="object-cover rounded-lg overflow-hidden"
+                />
+                <p class="preview-text">
+                  Itinéraire d'un praticien bien-être. <br />
+                  Entretien de Jean-Philippe, fondateur de Mon Corps Libéré,
+                  dans l'emission Un jour, une entreprise, sur Radio Caraïbes
+                  International.
+                </p>
+              </a>
             </div>
-            <div
-              class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
-            >
-              <img
-                src="assets/images/media/1-jour-1-entreprise.png"
-                alt=""
-                class="object-cover rounded-lg overflow-hidden"
-              />
-              <p class="preview-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-                similique!
-              </p>
+            <div id="small-preview" class="grid grid-cols-1 gap-6 lg:px-6">
+              <a
+                href="https://youtu.be/eE69clJxUs4"
+                class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+              >
+                <img
+                  src=""
+                  alt="Mon Corps Libéré"
+                  class="object-cover rounded-lg overflow-hidden"
+                />
+                <p class="preview-text">
+                  Mon Corps Libéré vise au bien-être, à la détente, à la
+                  relaxation, à la prise de conscience, à une meilleure gestion
+                  du stress. Ici, une démonstration de massage-assis par
+                  Jean-Philippe, à Fort-de-France un dimanche après-midi.
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -2529,20 +2541,8 @@
 
     <!-- ====== All Scripts -->
 
-    <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-      // ==== pricing plan toggler
-      let togglePlan = document.querySelector("#togglePlan");
-      0;
-
-      document.querySelector(".monthly").addEventListener("click", () => {
-        togglePlan.checked = false;
-      });
-      document.querySelector(".yearly").addEventListener("click", () => {
-        togglePlan.checked = true;
-      });
-
       // ==== for menu scroll
       const pageLink = document.querySelectorAll(".menu-scroll");
 
