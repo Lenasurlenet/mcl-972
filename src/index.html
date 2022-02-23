@@ -169,7 +169,7 @@
       id="home"
       class="relative pt-[120px] md:pt-[130px] lg:pt-[160px] bg-dark"
     >
-      <div class="container pt-8 md:pt-10 ">
+      <div class="container pt-8 md:pt-10">
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full px-4">
             <div class="w-full px-4">
@@ -1346,7 +1346,7 @@
                 <li>
                   <a
                     href="tel:+596 696 09 08 77"
-                    class="py-4 px-6 sm:px-10 inline-flex items-center justify-center text-center  text-white text-base bg-[#4985C5] hover:bg-opacity-80 hover:shadow-lg font-medium rounded-lg transition duration-300 ease-in-out"
+                    class="py-4 px-6 sm:px-10 inline-flex items-center justify-center text-center text-white text-base bg-[#4985C5] hover:bg-opacity-80 hover:shadow-lg font-medium rounded-lg transition duration-300 ease-in-out"
                   >
                     Je réserve
                   </a>
@@ -1492,7 +1492,7 @@
               <img
                 src="assets/images/services/massage-de-pied.jpg"
                 alt="jean-philippe"
-                class="bg-cover bg-center  mx-auto max-h-[520px] rounded-lg lg:ml-0"
+                class="bg-cover bg-center mx-auto max-h-[520px] rounded-lg lg:ml-0"
               />
             </div>
           </div>
@@ -1663,14 +1663,10 @@
               data-wow-delay=".1s"
             >
               <div class="flex justify-between items-center">
-                <h3
-                  class="font-semibold dark:text-white text-3xl mb-2 price"
-                >
+                <h3 class="font-semibold dark:text-white text-3xl mb-2 price">
                   <span class="amount">Mangue</span>
                 </h3>
-                <p
-                  class="font-semibold dark:text-white text-3xl mb-2 price"
-                >
+                <p class="font-semibold dark:text-white text-3xl mb-2 price">
                   <span class="amount">40€</span>
                 </p>
               </div>
@@ -1817,9 +1813,7 @@
               data-wow-delay=".1s"
             >
               <div class="flex justify-between items-center">
-                <h3
-                  class="font-semibold dark:text-white text-3xl mb-2 price"
-                >
+                <h3 class="font-semibold dark:text-white text-3xl mb-2 price">
                   <span class="amount">Corossol</span>
                 </h3>
                 <p
@@ -1952,9 +1946,7 @@
               data-wow-delay=".1s"
             >
               <div class="flex justify-between items-center">
-                <h3
-                  class="font-semibold dark:text-white text-3xl mb-2 price"
-                >
+                <h3 class="font-semibold dark:text-white text-3xl mb-2 price">
                   <span class="amount">Noix de coco</span>
                 </h3>
                 <p
@@ -2282,104 +2274,87 @@
     <!-- ===== About Section End -->
 
     <!-- ====== Media Section Start -->
-    <section class="relative z-10 py-[120px] px-6">
-      <div class="container">
-        <div class="flex flex-wrap mx-[-16px]">
-          <div class="w-full px-4">
+    <section id="media" class="relative z-10 py-[120px] px-6 bg-primary">
+      <div class="container media-container space-y-6 md:space-y-8">
+        <div class="block-title">
+          <h2
+            class="text-white dark:text-white font-semibold text-3xl sm:text-4xl md:text-[45px] lg:text-4xl xl:text-[45px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight mb-6"
+          >
+            Mon Corps Libéré dans les médias
+          </h2>
+          <p class="text-white font-medium text-base md:text-lg">
+            Jean-Phillipe, fondateur de MCL, explique son parcours, son métier,
+            ses services, à la télévion, à la radio, sur Youtube...
+          </p>
+        </div>
+
+        <!-- Media grid-->
+
+        <div
+          class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 md:gap-8 place-items-center"
+        >
+          <div
+            id="big-preview"
+            class="relative aspect-video h-96 w-48 md:max-w-[640px] md:max-h-[360px]"
+          >
+            <img
+              src="assets/images/media/quoi-de-9.jpg"
+              alt=""
+              class="h-full object-cover rounded-lg overflow-hidden"
+            />
+            <img
+              src="assets/images/media/play.svg"
+              alt=""
+              class="absolute top-1/2 left-[50%] right-[50%] cursor-pointer"
+            />
+          </div>
+          <!-- ... -->
+          <div id="small-previews" class="grid grid-cols-1 gap-6 lg:px-6">
             <div
-              class="mx-auto max-w-[570px] text-center mb-20 wow fadeInUp"
-              data-wow-delay=".1s"
+              class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
             >
-              <h2
-                class="text-dark font-semibold text-3xl sm:text-4xl md:text-[45px] mb-4"
-              >
-                MCL dans les médias
-              </h2>
-              <p
-                class="text-body-color text-base md:text-lg leading-relaxed md:leading-relaxed"
-              >
-                Mon Corps Libéré à la radio, à la télévision et sur Youtube!
+              <img
+                src="assets/images/media/1-jour-1-entreprise.png"
+                alt=""
+                class="object-cover rounded-lg overflow-hidden"
+              />
+              <p class="preview-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+                similique!
+              </p>
+            </div>
+            <div
+              class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+            >
+              <img
+                src="assets/images/media/1-jour-1-entreprise.png"
+                alt=""
+                class="object-cover rounded-lg overflow-hidden"
+              />
+              <p class="preview-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+                similique!
+              </p>
+            </div>
+            <div
+              class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+            >
+              <img
+                src="assets/images/media/1-jour-1-entreprise.png"
+                alt=""
+                class="object-cover rounded-lg overflow-hidden"
+              />
+              <p class="preview-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
+                similique!
               </p>
             </div>
           </div>
         </div>
-        <div class="media-files space-y-6">
-          <div class="flex flex-wrap mx-[-16px]">
-          <div class="w-full px-4">
-            <div
-              class="mx-auto max-w-7xl rounded-md overflow-hidden wow fadeInUp"
-              data-wow-delay=".15s"
-            >
-              <div
-                class="relative grid grid-cols-1 gap-6 lg:grid-cols-3"
-              >
-                <div class="video aspect-video">
-                  <h4 class="text-2xl font-semibold mb-4">Quoi de 9</h4>
-                  <iframe
-                    
-                    src="https://www.youtube.com/embed/-jxEu0GicYs"
-                    title="Quoi de 9"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-xl"
-                  ></iframe>
-                </div>
-                <div class="video aspect-video">
-                  <h4 class="text-2xl font-semibold mb-4">
-                    1 jour, 1 entreprise
-                  </h4>
-                  <iframe
-                    
-                    src="https://www.youtube.com/embed/eE69clJxUs4"
-                    title="Lea - Un jour, une entreprise"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-xl"
-                  ></iframe>
-                </div>
-                <div class="video aspect-video">
-                  <h4 class="text-2xl font-semibold mb-4">
-                    Massage sur chaise
-                  </h4>
-                  <iframe
-                    
-                    src="https://www.youtube.com/embed/GI2JePwoyLU"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                    class="rounded-xl"
-                  ></iframe>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="audio" class="flex flex-wrap mx-[-16px]">
-          <div class="max-w-[400px] bg-dark rounded-xl shadow-sm">       
-            <div class="flex-auto px-6">
-              <div class="block py-4">
-                <h4 class="text-white text-2xl font-semibold mb-4">
-                  Note audio - Sophrologie
-                </h4>
-                <p class="max-w-full flex-none text-sm md:text-base font-medium text-white mt-2">Avantages du groupe</p>
-              </div>
-    
-              <div class="flex space-x-4 mb-6 text-sm font-medium">
-                <div class="flex-auto flex my-4 space-x-4">
-                  <audio controls>
-                    <source src="assets/audios/sophrologie-avantages-du-groupe.mp3" type="audio/mp3">
-                  </audio>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="absolute bottom-0 left-0 right-0 z-[-1]">
-          <img src="assets/images/media/shape.svg" alt="shape" class="w-full" />
+      </div>
+
+      <div class="absolute bottom-0 left-0 right-0 z-[-1]">
+        <img src="assets/images/media/shape.svg" alt="shape" class="w-full" />
       </div>
     </section>
     <!-- ====== Media Section End -->
@@ -2405,7 +2380,6 @@
                 </h2>
               </div>
               <div class="flex flex-wrap justify-between mb-12 lg:mb-0">
-                
                 <div class="flex max-w-full w-[330px] mb-8">
                   <div class="text-[32px] text-[#4985C5] mr-6">
                     <svg
@@ -2438,7 +2412,11 @@
               <h3 class="font-semibold mb-8 text-2xl md:text-[26px]">
                 Laissez un mot
               </h3>
-              <form action="https://formsubmit.co/bonjour@moncorpslibere.fr" method="POST" netlify>
+              <form
+                action="https://formsubmit.co/bonjour@moncorpslibere.fr"
+                method="POST"
+                netlify
+              >
                 <div class="mb-6">
                   <label for="fullName" class="block text-xs text-dark"
                     >Nom*</label
@@ -2484,7 +2462,7 @@
                     value="Formulaire depuis moncorpslibere.fr"
                     class="w-full border-0 border-b border-[#f1f1f1] focus:border-[#4985C5] focus:outline-none py-4"
                   />
-                </div>               
+                </div>
                 <div class="mb-6">
                   <label for="message" class="block text-xs text-dark"
                     >Message*</label
