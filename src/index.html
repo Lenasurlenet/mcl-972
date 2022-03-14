@@ -1668,11 +1668,14 @@
               class="w-full text-center lg:text-left mb-12 lg:mb-0 wow fadeInUp"
               data-wow-delay=".15s"
             >
-              <img
-                src="assets/images/services/massage-assis-sur-chaise-ergonomique.jpg"
-                alt="Un cou massé"
-                class="bg-cover bg-center mx-auto max-h-[520px] rounded-lg lg:ml-0"
-              />
+              <figure>
+                <img
+                src="assets/images/services/massage-assis.jpg"
+                alt="Un dos massé"
+                class="bg-cover bg-center mx-auto max-h-[520px] rounded-lg mb-2 lg:ml-0"
+               />
+                <figcaption class="text-white text-small mt-2" >Elève et professeur s'offrent un moment de détente dans les locaux de l'Univertsité des Antilles</figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -1741,10 +1744,10 @@
               data-wow-delay=".1s"
             >
               <div class="flex justify-between items-center">
-                <h3 class="font-semibold dark:text-white text-3xl mb-2 price">
+                <h3 class="font-semibold dark:text-white   text-2xl md:text-3xl mb-2 price">
                   <span class="amount">Mangue</span>
                 </h3>
-                <p class="font-semibold dark:text-white text-3xl mb-2 price">
+                <p class="font-semibold dark:text-white    text-2xl md:text-3xl mb-2 price">
                   <span class="amount">40€</span>
                 </p>
               </div>
@@ -1891,11 +1894,11 @@
               data-wow-delay=".1s"
             >
               <div class="flex justify-between items-center">
-                <h3 class="font-semibold dark:text-white text-3xl mb-2 price">
+                <h3 class="font-semibold dark:text-white text-2xl text-3xl mb-2 price">
                   <span class="amount">Corossol</span>
                 </h3>
                 <p
-                  class="font-semibold text-black dark:text-white text-3xl mb-2 price"
+                  class="font-semibold text-black dark:text-white text-2xl md:text-3xl mb-2 price"
                 >
                   <span class="amount">60€</span>
                 </p>
@@ -2024,11 +2027,11 @@
               data-wow-delay=".1s"
             >
               <div class="flex justify-between items-center">
-                <h3 class="font-semibold dark:text-white text-3xl mb-2 price">
+                <h3 class="font-semibold dark:text-white text-2xl md:text-3xl mb-2 price">
                   <span class="amount">Noix de coco</span>
                 </h3>
                 <p
-                  class="font-semibold text-black dark:text-white text-3xl mb-2 price"
+                  class="font-semibold text-black dark:text-white text-2xl md:text-3xl mb-2 price"
                 >
                   <span class="amount">30€</span>
                 </p>
@@ -2371,75 +2374,80 @@
         <div
           class="grid grid-cols-1 gap-6 p-6 lg:grid-cols-2 md:gap-8 place-items-center"
         >
-          <button
-            id="big-preview"
-            class="relative aspect-video h-96 w-48 text-center md:max-w-[640px] md:max-h-[360px]"
-          >
-            <img
-              src="assets/images/media/quoi-de-9.jpg"
-              alt=""
-              class="relative h-full w-full object-cover object-center rounded-lg overflow-hidden"
-            />
-            <div
-              class="absolute w-full h-full top-0 right-0 flex items-center justify-center"
-            >
+
+            <div id="quoi-de-9" class="small-preview">
               <a
                 href="https://www.youtube.com/embed/-jxEu0GicYs"
-                class="w-[70px] h-[70px] rounded-full flex items-center justify-center bg-white bg-opacity-75 text-primary hover:bg-opacity-100 transition"
-              >
-                <svg
-                  width="16"
-                  height="18"
-                  viewBox="0 0 16 18"
-                  class="fill-current"
-                >
-                  <path
-                    d="M15.5 8.13397C16.1667 8.51888 16.1667 9.48112 15.5 9.86602L2 17.6603C1.33333 18.0452 0.499999 17.564 0.499999 16.7942L0.5 1.20577C0.5 0.43597 1.33333 -0.0451549 2 0.339745L15.5 8.13397Z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </button>
-
-          <div class="small-previews grid grid-cols-1 gap-6 lg:px-6">
-            <!-- ... -->
-            <div id="small-preview" class="grid grid-cols-1 gap-6 lg:px-6">
-              <a
-                href="https://youtu.be/eE69clJxUs4"
-                class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+                class="small-preview-content h-44 rounded-lg bg-white grid grid-cols-1 place-items-center p-4 gap-6"
               >
                 <img
-                  src="assets/images/media/1-jour-1-entreprise.png"
+                  src="assets/images/media/Quoi-de-9-thumnail.png"
                   alt=""
-                  class="object-cover rounded-lg overflow-hidden"
+                  class="aspect-video object-cover object-center rounded-lg"
                 />
                 <p class="preview-text">
-                  Itinéraire d'un praticien bien-être. <br />
+                  <span class="font-semibold text-dark">Itinéraire d'un praticien bien-être. </span>
+                  Entretien de Jean-Philippe, fondateur de Mon Corps Libéré,
+                  dans l'emission Quoi de 9 sur Zouk Tv.
+                </p>
+              </a>
+            </div>
+            <div id="RCI" class="small-preview">
+              <a
+                href="https://youtu.be/eE69clJxUs4"
+                class="small-preview-content h-44 rounded-lg bg-white grid grid-cols-1 place-items-center p-4 gap-6"
+              >
+                <img
+                  src="assets/images/media/radio-1.png"
+                  alt=""
+                  class="aspect-video object-cover object-center rounded-lg"
+                />
+                <p class="preview-text">
+                  <span class="font-semibold text-dark">Itinéraire d'un praticien bien-être. </span>
                   Entretien de Jean-Philippe, fondateur de Mon Corps Libéré,
                   dans l'emission Un jour, une entreprise, sur Radio Caraïbes
                   International.
                 </p>
               </a>
             </div>
-            <div id="small-preview" class="grid grid-cols-1 gap-6 lg:px-6">
-              <a
-                href="https://youtu.be/eE69clJxUs4"
-                class="small-preview-content h-44 rounded-lg bg-white p-3 flex flex-col justify-center items-center space-x-4"
+            <div id="note - sophrologie de groupe" class="note-vocale small-preview">
+              <div
+                class="small-preview-content h-44 rounded-lg bg-white grid grid-cols-1 place-items-center p-4 gap-6"
               >
                 <img
-                  src=""
-                  alt="Mon Corps Libéré"
-                  class="object-cover rounded-lg overflow-hidden"
+                  src="assets/images/media/massage-assis-thumbnail.png"
+                  alt=""
+                  class="aspect-video object-cover object-center rounded-lg"
                 />
                 <p class="preview-text">
-                  Mon Corps Libéré vise au bien-être, à la détente, à la
-                  relaxation, à la prise de conscience, à une meilleure gestion
-                  du stress. Ici, une démonstration de massage-assis par
-                  Jean-Philippe, à Fort-de-France un dimanche après-midi.
+                  <span class="font-semibold text-dark" >La Massage sur chaise</span><br />
+                  Nous pratiquons le massage-assis à domicile.
                 </p>
-              </a>
+              </div>
             </div>
-          </div>
+            <div id="note - sophrologie de groupe" class="note-vocale small-preview">
+              <div
+                class="small-preview-content h-44 rounded-lg bg-white grid grid-cols-1 place-items-center p-4 gap-6"
+              >
+                <img
+                  src="assets/images/media/note-vocale-sophrologie-de-groupe.png"
+                  alt=""
+                  class="aspect-video object-cover object-center rounded-lg"
+                />
+                <p class="preview-text">
+                  <span class="font-semibold text-dark" >La sophrologie en groupe</span> <br />
+                  Jean-Philippe explique les avantages des sessions de sophrologie en groupe.
+                </p>
+                <audio
+                 controls
+                src="assets/audios/sophrologie-avantages-du-groupe.mp3"
+                class="small-preview-content h-44 rounded-lg bg-white grid grid-cols-1 place-items-center p-4 gap-6"
+                >
+                <code>audio</code>
+            
+                </audio>
+              </div>
+            </div>
         </div>
       </div>
 

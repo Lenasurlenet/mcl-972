@@ -35,7 +35,7 @@
     </script>
   </head>
   <body class="dark">
-    <!-- ====== Navbar Section Start -->
+     <!-- ====== Navbar Section Start -->
     <div
       class="header bg-transparent absolute top-0 left-0 z-40 w-full flex items-center"
     >
@@ -96,13 +96,13 @@
 
                       <a
                         href="sophrologie.html"
-                        class="block text-sm md:text-base rounded py-[10px] px-4 text-white hover:opacity-70"
+                        class="block text-sm md:text-base rounded py-[10px] px-4 text-white hover:bg-white hover:text-dark"
                       >
                         Sophrologie
                       </a>
                       <a
                         href="relaxation.html"
-                        class="block text-sm md:text-base rounded py-[10px] px-4 text-white hover:opacity-70"
+                        class="block text-sm md:text-base rounded py-[10px] px-4 text-white hover:bg-white hover:text-dark"
                       >
                         Relaxation 2.0
                       </a>
@@ -138,7 +138,7 @@
             </div>
             <div class="flex justify-end items-center pr-16 lg:pr-0">
               <a
-                href="about.html#contact"
+                href="#contact"
                 class="hidden md:block text-base font-semibold text-white bg-primary py-3 px-8 md:px-9 lg:px-6 xl:px-9 hover:shadow-signUp hover:bg-opacity-90 rounded-md transition ease-in-up duration-300"
               >
                 Contact
@@ -146,7 +146,7 @@
               <div>
                 <label
                   for="darkToggler"
-                  class="cursor-pointer w-9 h-9 md:w-14 md:h-14 rounded-full flex items-center justify-center bg-gray-2 dark:bg-dark-bg text-black dark:text-white"
+                  class="cursor-pointer w-9 h-9 md:w-14 md:h-14 rounded-full flex items-center justify-center bg-gray-2 dark:bg-dark-bg text-dark dark:text-white"
                 >
                   <input
                     type="checkbox"
@@ -191,7 +191,7 @@
               >
                 <div class="mt-16">
                   <img
-                    src="assets/images/massage/massage_sur_table.jpg"
+                    src="assets/images/massage/massage-sur-table.jpg"
                     alt="hero"
                     class="max-w-full max-h-[380px] mx-auto rounded-t-xl rounded-tr-xl"
                   />
@@ -1614,7 +1614,7 @@
       </div>
     </section>
 
-    <section id="massage-sur-table" class="bg-dark py-16">
+    <section id="massage-sur-chaise" class="bg-dark py-16">
       <div class="container text-left">
         <h2
           class="text-dark dark:text-white font-semibold text-3xl sm:text-4xl md:text-[45px] lg:text-4xl xl:text-[45px] leading-tight sm:leading-tight md:leading-tight lg:leading-tight xl:leading-tight mb-6"
@@ -1623,9 +1623,9 @@
         </h2>
         <div
           id=""
-          class="block space-y-6 lg:flex justify-center items-start lg:space-x-12"
+          class="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6"
         >
-          <div class="text-left w-full columns-xs space-y-6">
+          <div class="col-span-1 text-left">
             <div class="p-1 shadow-xl rounded-xl">
               <div class="w-full px-4">
                 <div
@@ -1830,10 +1830,10 @@
               </div>
             </div>
           </div>
-          <div class="rounded-lg max-w-md lg:pb-16">
+          <div class="col-span-1 rounded-lg">
             <img
-              src="assets/images/massage/massage-assis-sur-chaise.jpg"
-              alt="massage du cou lors d'une séance de massage sur chaise"
+              src="assets/images/massage/massage-assis-UDA.jpg"
+              alt="massage sur chaise dans les jardins de l'Université des Antilles"
               class="rounded-lg"
             />
           </div>
@@ -1880,7 +1880,6 @@
 
     <!-- ====== All Scripts -->
 
-    <script src="js/glightbox.min.js"></script>
     <script src="js/main.js"></script>
     <script>
       // ==== pricing plan toggler
@@ -1934,14 +1933,6 @@
 
       window.document.addEventListener("scroll", onScroll);
 
-      //========= glightbox
-      GLightbox({
-        href: "https://youtu.be/-jxEu0GicYs",
-        type: "video",
-        source: "youtube", //vimeo, youtube or local
-        width: 900,
-        autoplayVideos: true,
-      });
     </script>
   </body>
 </html>
