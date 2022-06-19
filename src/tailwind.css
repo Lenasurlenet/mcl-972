@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.padTop {
+  @apply pt-12;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
