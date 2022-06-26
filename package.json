@@ -15,9 +15,9 @@
   "license": "MIT",
   "devDependencies": {
     "@11ty/eleventy": "github:11ty/eleventy",
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.6",
-    "tailwindcss": "^3.0.18"
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.4"
   },
   "dependencies": {
     "glightbox": "^3.1.0",

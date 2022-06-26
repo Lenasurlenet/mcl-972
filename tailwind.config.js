@@ -3,24 +3,23 @@ module.exports = {
 
   theme: {
     screens: {
-      sm: "540px",
-      // => @media (min-width: 576px) { ... }
+      sm: "640px",
+      
 
-      md: "720px",
+      md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      lg: "960px",
+      lg: "1024px",
       // => @media (min-width: 992px) { ... }
 
-      xl: "1140px",
+      xl: "1240px",
       // => @media (min-width: 1200px) { ... }
 
-      "2xl": "1320px",
+      "2xl": "1440px",
       // => @media (min-width: 1400px) { ... }
     },
     container: {
       center: true,
-      padding: "16px",
     },
     fontFamily: {
       Serif: "'Cinzel', serif",
