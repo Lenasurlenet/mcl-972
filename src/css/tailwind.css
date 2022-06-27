@@ -1232,7 +1232,7 @@ input#checkboxLabel:checked ~ .box span {
     margin: 2rem auto;
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 320px);
+    grid-template-columns: repeat(auto-fill, minmax(288px, 320px));
     justify-content: center;
     grid-gap:1rem;
   }
