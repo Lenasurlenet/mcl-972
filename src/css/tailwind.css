@@ -1242,6 +1242,31 @@ input#checkboxLabel:checked ~ .box span {
     max-height: 24rem;
   }
 
+
+.partnersGrid {
+    max-width: 1440px;
+    width:100%;
+    height: auto;
+    margin: 2rem auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    grid-gap:1rem;
+  }
+
+  @media (min-width: 640px) {
+   .partnersGrid {
+    grid-template-columns: repeat(3, 1fr);
+   }
+  }
+
+  .partnersGrid.partner {
+    max-width: 20rem;
+    max-height: 24rem;
+  }
+
   .zoom {
     max-width: 320px;
   }
