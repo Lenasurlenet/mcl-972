@@ -4546,3 +4546,28 @@ input#checkboxLabel:checked ~ .box span {
     padding: 60px;
   }
 }
+
+ #gallery.grid {
+    max-width: 1440px;
+    width:100%;
+    height: auto;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center;
+    grid-gap:16px
+  }
+
+  #gallery.grid.gridItem {
+    max-width: 9rem;
+    max-height: 12rem;
+  }
+
+  .zoom {
+    max-width: 320px;
+  }
+  .zoom:hover {
+   transform: scale(1.25);
+   transition-duration: 300ms;
+   max-width: 360px;
+  }
