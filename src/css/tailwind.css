@@ -1225,20 +1225,21 @@ input#checkboxLabel:checked ~ .box span {
     top: 100%;
   }
 
-  #gallery.grid {
+  .galleryGrid {
     max-width: 1440px;
     width:100%;
     height: auto;
     margin: 2rem auto;
+    padding: 24px;
     display: grid;
     grid-template-columns: repeat(auto-fill, 320px);
     justify-content: center;
-    grid-gap:16px
+    grid-gap:1rem;
   }
 
-  #gallery.grid.gridItem {
-    max-width: 9rem;
-    max-height: 12rem;
+  .galleryGrid.gridItem {
+    max-width: 20rem;
+    max-height: 24rem;
   }
 
   .zoom {
